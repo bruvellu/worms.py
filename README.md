@@ -3,7 +3,7 @@
 Python library to access the web services of the [WoRMS
 database](http://www.marinespecies.org/).
 
-Code based on [itis.py] and the [example python
+Code based on [itis.py](https://github.com/nelas/itis.py) and the [python
 client](http://marinespecies.org/aphia.php?p=webservice&type=python) from
 WoRMS.
 

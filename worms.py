@@ -18,7 +18,7 @@ from suds.client import Client
 import logging
 
 # Create logger.
-logger = logging.getLogger('itis')
+logger = logging.getLogger('worms')
 logger.setLevel(logging.DEBUG)
 logger.propagate = False
 formatter = logging.Formatter('[%(levelname)s] %(asctime)s @ %(module)s %(funcName)s (l%(lineno)d): %(message)s')
