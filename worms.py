@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-'''Client to access the web services of WoRMS database (http://www.marinespecies.org/).
+'''Client to access the web services of the WoRMS database (http://www.marinespecies.org/).
 
-For a full description refer to: http://marinespecies.org/aphia.php?p=soap#
+For a full description refer to: http://marinespecies.org/aphia.php?p=soap
 
 Usage:
 
     from worms import Aphia
     aphia = Aphia()
-    results = aphia.search_by_scientific_name('Priapulus caudatus')
+    results = aphia.get_aphia_records('Priapulus caudatus')
     print(results)
 
 '''

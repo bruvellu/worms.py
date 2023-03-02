@@ -1,4 +1,4 @@
-# :octopus: `worms.py`
+# :squid: `worms.py`
 
 Python library to query the [World Register of Marine Species](http://www.marinespecies.org/) (WoRMS).
 
