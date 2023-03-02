@@ -1,7 +1,6 @@
-# :octopus: worms.py
+# :octopus: `worms.py`
 
-Python library to access the [World Register of Marine Species](http://www.marinespecies.org/) (WoRMS) webservices.
-See the full documentation [here](https://marinespecies.org/aphia.php?p=webservice).
+Python library to access the [WoRMS](http://www.marinespecies.org/) webservices (World Register of Marine Species).
 
 ## Requirements
 
