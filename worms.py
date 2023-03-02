@@ -11,6 +11,33 @@ Usage:
     results = aphia.get_aphia_records('Priapulus caudatus')
     print(results)
 
+Services:
+
+    [y] getAphiaID
+    [y] getAphiaRecords
+    [y] getAphiaNameByID
+    [y] getAphiaRecordByID
+    [ ] getAphiaRecordsByIDs
+    [y] getAphiaRecordByExtID
+    [y] getExtIDbyAphiaID
+    [y] getAphiaRecordsByNames
+    [y] getAphiaRecordsByVernacular
+    [y] getAphiaRecordsByDate
+    [y] getAphiaClassificationByID
+    [y] getSourcesByAphiaID
+    [y] getAphiaSynonymsByID
+    [y] getAphiaVernacularsByID
+    [y] getAphiaChildrenByID
+    [y] matchAphiaRecordsByNames
+    [y] getAphiaDistributionsByID
+    [ ] getAphiaTaxonRanksByID
+    [ ] getAphiaTaxonRanksByName
+    [ ] getAphiaRecordsByTaxonRankID
+    [ ] getAphiaAttributeKeysByID
+    [ ] getAphiaAttributeValuesByCategoryID
+    [ ] getAphiaIDsByAttributeKeyID
+    [ ] getAphiaAttributesByAphiaID
+
 '''
 
 from suds import null, WebFault
