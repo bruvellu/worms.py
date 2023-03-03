@@ -90,6 +90,7 @@ class Aphia:
         '''Get one or more matching AphiaRecords for a given name.'''
         logger.info('Searching for the name "%s"', query)
         results = self.wire(self.client.service.getAphiaRecords, query)
+        self.show_results(results)
         return results
 
     def get_aphia_name_by_id(self, query):
@@ -188,6 +189,25 @@ class Aphia:
         logger.info('Searching for the ID "%s"', query)
         results = self.wire(self.client.service.getAphiaDistributionsByID, query)
         return results
+
+    def show_results(self, results):
+        '''Print relevant information about the results.'''
+        if results:
+            logger.info('Found {} record(s)'.format(len(results)))
+            for result in results:
+                self.print_record(result)
+        else:
+            logger.info('Found no records.')
+
+    def print_record(self, record):
+        '''Print taxon information.'''
+        logger.info('ID: {0}, Name: {1}, Authority: {2}, Rank: {3}, Status: {4}'.format(
+            record['AphiaID'],
+            record['scientificname'],
+            record['authority'],
+            record['rank'],
+            record['status'])
+            )
 
 if __name__ == '__main__':
     print('Command line not implemented yet.')
